@@ -28,7 +28,7 @@ function playLooped() {
   audio=collection[audio];
   audio.play();
   audio.volume = 0.5;
-  setTimeout(playLooped,audio.duration*1);
+  setTimeout(playLooped,audio.duration*5000);
 }
 
 // the songs to be played!
