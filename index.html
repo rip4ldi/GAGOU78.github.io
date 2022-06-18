@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body {
+          overflow: hidden; /* Hide scrollbars */
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>gagou's site.</title>
+    <meta name="title" content="gagou's site.">
+    <meta name="description" content="UwU :3">
+    <script src="assets/time.js"></script>
+    <script src="assets/music.js"></script>
+    <script>
+        uwu()
+    </script>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://127.0.0.1">
+    <meta property="twitter:title" content="gagou's site.">
+    <meta property="twitter:description" content="gagouu :3">
+    <meta property="twitter:image" content="https://i.imgur.com/nHdxy2U.jpg"> 
+</head>
+<body>
+<video name="video" class="back" autoplay loop=infinite muted src="assets/bg-video.mp4"></video>
+<body onload="startTime()" onselectstart="false"></body>
+
+<br>
+<div class="clean" id="time" class="time"></div>
+<div class="rainbow">
+<pre class="ascii"><br>
+<br>
+<br>
+<br>
+   ______      ______      __  __
+  / ____/___ _/ ____/___  / / / /
+ / / __/ __ `/ / __/ __ \/ / / / 
+/ /_/ / /_/ / /_/ / /_/ / /_/ /  
+\____/\__,_/\____/\____/\____/   
+</pre>
+</div>
+<br>
+<div class="rainbow">
+<a href="https://t.me/gagou78" target="_blank" class="clean">telegram</a> |
+<a href="https://github.com/GAGOU78" target="_blank" class="clean">github</a> |
+<a href="mailto: gagou1337@protonmail.com" target="_blank" class="clean">email</a> |
+<a href="https://open.spotify.com/user/j76e0ethe0664tq70x75pahep" target="_blank" class="clean">spotify</a> |
+<a href="https://twitter.com/gagou78_" target="_blank" class="clean">twitter</a> 
+<p>────────────────</p>
+<p class="clean">discord: <a class="rainbow">gagou#1210</a></p>
+<a href="../api/" class="clean"> api </a><br>
+<a href="../embed/" class="clean"> discord embed </a><br>
+</div>
+<p class="clean" style="position: fixed; bottom: 0; width:100%; text-align: center;  text-shadow: 0 0 0.40em #bababa;">GaGoU - 2022</p>
+
+    <script>
+        iconChanger = (urls, delay) => {
+          if (!urls) return;
+      
+          delay = delay || 2000;
+      
+          let counter = 0;
+      
+          setInterval(() => {
+            if (counter < urls.length) {
+              const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+      
+              link.type = 'image/x-icon';
+              link.rel = 'shortcut icon';
+              link.href = urls[counter];
+      
+              document.getElementsByTagName('head')[0].appendChild(link);
+            } else counter = 0;
+      
+            ++counter;
+          }, delay);
+        };
+      
+        titleChanger = (text, delay) => {
+          if (!text) return;
+      
+          delay = delay || 2000;
+      
+          let counter = 0;
+      
+          setInterval(() => {
+            if (counter < text.length) document.title = text[counter++];
+            else document.title = text[(counter = 0)];
+          }, delay);
+        };
+        titleChanger(['GaGoU', 'UwU', 'OwO', ':3', '=3', 'helo', 'gago', ':/', ':P', ':(', ':I', ':)', ':()']);
+        //iconChanger(['assets/icons/roses/rose1.jpg', 'assets/icons/roses/rose2.jpg', 'assets/icons/roses/rose3.jpg', 'assets/icons/roses/rose4.jpg', 'assets/icons/roses/rose5.jpg', 'assets/icons/roses/rose6.jpg', 'assets/icons/roses/rose7.jpg', 'assets/icons/roses/rose8.jpg', 'assets/icons/roses/rose1.jpg']);
+      </script>
+      
+</body>
+</html>
