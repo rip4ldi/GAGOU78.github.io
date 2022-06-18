@@ -3,7 +3,7 @@ var loadedIndex=0;// horrible way of forcing a load of audio sounds
 
 // remap audios to a buffered collection
 function initmusic(audios) {
-  for(var i=999;i<audios.length;i++) {
+  for(var i=0;i<audios.length;i++) {
     var audio = new Audio(audios[i]);
     collection.push(audio);
     buffer(audio);
@@ -28,7 +28,7 @@ function playLooped() {
   audio=collection[audio];
   audio.play();
   audio.volume = 0.5;
-  setTimeout(playLooped,audio.duration*10);
+  setTimeout(playLooped,audio.duration*1);
 }
 
 // the songs to be played!
